@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+     font-family: "Lucida Console", "Courier New", monospace;
+}
+.main{
+    height:100vh;
+    width:100%;
+    background:	#34568B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+
+}
+.center{
+    max-width:120rem;
+    padding:4rem;
+    background:#DD4124;
+    display:flex;
+    place-items:center;
+    flex-direction:column;
+    justify-content:space-around;
+    border-radius:20px;
+    gap:2rem;
+    box-shadow: 0 0 8px 0 #000;
+
+}
+.center h1{
+       color:white;
+      margin:10px;
+    text-transform:capitalize;
+    font-variant:italic;
+    text-shadow: 2px 2px 4px #000000;
+    position: relative;
+}
+
+
+.center h1:before
+{
+ content: 'Welcome To Funny Jokes';
+ color: red;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ overflow: hidden;
+ animation: keychange 5s linear infinite;
+}
+.center h2{
+
+    padding:20px 20px 20px 20px;
+    color: white;
+     border-radius:10px;
+     text-shadow: 2px 2px 4px black;
+     font-family: "Lucida Console", "Courier New", monospace;
+     overflow:hidden;
+}
+
+.center button{
+
+    height:5vh;
+    width:12vw;
+    margin-bottom:10px;
+    background:rgb(34,177,76);
+    color:yellow;
+    border:none;
+    font-size:2vw;
+    border-radius:10px;
+    /* box-shadow: 2px 2px 4px #000000; */
+}
+.center button:hover{
+
+    background:#00A170;
+    color:white;
+    cursor:pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.joke
+{
+    position: relative;
+}
+
+
+
+.joke:before
+{
+ content: "";
+ width:100%;
+ height: 0%;
+ bottom: 0;
+ left: 0;
+ border-top :2px solid seagreen;
+ position: absolute;
+ transition: 3s all;
+ 
+}
+.joke:after
+{
+ content: "";
+ width:0%;
+ height: 0%;
+ bottom: 0;
+ left: 0;
+ border-top :2px solid honeydew;
+ 
+ position: absolute;
+ transition: 3s all;
+ animation: keychange 5s linear infinite;
+}
+@keyframes keychange
+{
+    
+0%
+{
+    width: 0%;
+}
+
+50%{
+    width: 50%;
+}
+100%
+{
+    width: 100%;
+}
+0%{
+    width: 0%;
+}
+    
+}
+

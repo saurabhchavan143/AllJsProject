@@ -1,0 +1,54 @@
+#clockcont{
+    position:relative;
+    height:40vw;
+    width:40vw;
+  
+    background:url(clock.png) no-repeat;
+    background-size:100%;
+      margin:auto;
+    
+
+}
+#min,#hour,#sec,#circle{
+    position:absolute;
+    }
+    #min{
+       
+        height:38%;
+        width:3%;
+        background:black;
+        margin-top:12%;
+        margin-left:48%;
+       
+       transform-origin:bottom;
+       border-radius:10px;
+    }
+        #sec{
+       height:40%;
+        width:2%;;
+        background:rgb(242,126,49);
+       margin-top:10%;
+        margin-left:49%;
+        transform-origin:bottom;
+        border-radius:10px;   
+    }
+    
+        #hour{
+          height:30%;
+        width:4%;
+        background:red;
+        margin:21% 49%;
+         transform-origin:bottom;
+         border-radius:10px;
+       
+    }
+    #circle{
+       height:10%;
+        width:10%;
+        margin:45% 45%;
+        border-radius:50%;
+        background:black;
+    
+    }
+    
+    

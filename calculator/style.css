@@ -1,0 +1,52 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#000;
+    height:100vh;
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container{
+    background:#f6f6f6fa;
+    padding:1rem;
+    height:50vh;
+    width: 50vw;
+    
+}
+.container #txt
+{
+padding:1rem;
+width: 100%;
+height:5rem;
+border:none;
+background:#fff;
+border-radius:5px;
+box-shadow:0px 0px 1rem .1rem #f6f6f6ba inset;
+}
+.table{
+    width: 100%;
+    border:1px solid black;
+}
+
+  .table tr
+    { 
+      background:red;
+      display: flex;
+      gap:2rem;
+     }
+     .table  td{
+    width:10rem;
+     }
+tbody{
+    background:green;
+    /* padding:2rem; */
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+td:first-child{
+    width:20rem;
+}
